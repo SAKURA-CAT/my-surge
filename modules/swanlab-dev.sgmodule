@@ -1,5 +1,6 @@
 #!name=production.swanlab.cn
 #!desc=Redirect production.swanlab.cn to localhost:5177 for local development.
+#!category=cunyue
 
 [General]
 force-http-engine-hosts=%APPEND% production.swanlab.cn, www.production.swanlab.cn
