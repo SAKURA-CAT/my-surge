@@ -1,12 +1,8 @@
-#!name=production.swanlab.cn
-#!desc=Redirect production.swanlab.cn to localhost:5177 for local development.
+#!name=pro.swanlab.cn
+#!desc=Map pro.swanlab.cn to 127.0.0.1 to keep the domain unchanged in the browser.
 #!category=cunyue
 
-[General]
-force-http-engine-hosts=%APPEND% production.swanlab.cn, www.production.swanlab.cn
-
-[MITM]
-hostname = %INSERT% production.swanlab.cn, www.production.swanlab.cn
-
-https://ahrefs.com/writing-tools/paragraph-rewriter
-^https?://(|www\.)production\.swanlab\.cn http://localhost:5177 302
+[Host]
+# 将线上域名直接解析到本机 IP
+pro.swanlab.cn = 127.0.0.1
+www.pro.swanlab.cn = 127.0.0.1
