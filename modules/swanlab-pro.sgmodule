@@ -1,6 +1,6 @@
 #!name=pro.swanlab.cn
 #!desc=Map pro.swanlab.cn to 127.0.0.1 to keep the domain unchanged in the browser.
-#!category=cunyue
+#!category=swanlab
 
 [Host]
 # 将线上域名直接解析到本机 IP
