@@ -1,0 +1,11 @@
+#!name=production.swanlab.cn
+#!desc=Redirect production.swanlab.cn to localhost:5177 for local development.
+
+[General]
+force-http-engine-hosts=%APPEND% production.swanlab.cn, www.production.swanlab.cn
+
+[MITM]
+hostname = %INSERT% production.swanlab.cn, www.production.swanlab.cn
+
+https://ahrefs.com/writing-tools/paragraph-rewriter
+^https?://(|www\.)production\.swanlab\.cn http://localhost:5177 302
